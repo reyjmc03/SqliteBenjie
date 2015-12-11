@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name: "
+    android:id="@+id/textView"
+    android:layout_alignBaseline="@+id/addbutton"
+    android:layout_alignBottom="@+id/addbutton"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+   <EditText
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:id="@+id/user"
+       android:text="Name"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@+id/textView"
+       android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbutton"
+        android:text="Button Add"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewbutton"
+        android:text="Button View"
+        android:layout_below="@+id/addbutton"
+        android:layout_alignRight="@+id/addbutton"
+        android:layout_alignEnd="@+id/addbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatebutton"
+        android:text="Update Button"
+        android:layout_below="@+id/viewbutton"
+        android:layout_alignRight="@+id/viewbutton"
+        android:layout_alignEnd="@+id/viewbutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT ID TO UPDATE(POSITION)"
+        android:layout_alignTop="@+id/viewbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:layout_above="@+id/updatebutton"
+        android:layout_toLeftOf="@+id/idd"
+        android:layout_toStartOf="@+id/idd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idd"
+        android:text="ID"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/user"
+        android:layout_alignStart="@+id/user" />
+
+</RelativeLayout>
